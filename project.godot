@@ -24,7 +24,8 @@ config/icon="res://Assets/Textures/icon.svg"
 folder_colors={
 "res://Assets/": "green",
 "res://Scenes/": "yellow",
-"res://Scripts/": "orange"
+"res://Scripts/": "orange",
+"res://Testing/": "gray"
 }
 
 [input]
