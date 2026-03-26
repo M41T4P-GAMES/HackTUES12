@@ -1,5 +1,7 @@
 extends Node
 
+const HEALTH_DECREASE_PER_SEC = 0.5
+const HAPPINESS_DECREASE_PER_SEC = 0.5
 const MAX_HEALTH = 100
 const MAX_HAPPINESS = 100
 
@@ -11,7 +13,9 @@ var health: float = 100
 var money: float = 50
 var happiness: float = 50
 
-func _physics_process(_delta: float):
+func _physics_process(delta: float):
+	hurt(delta * HEALTH_DECREASE_PER_SEC)
+	sadder(delta * HAPPINESS_DECREASE_PER_SEC)
 	$HealthBar.value = health
 	$HappinessBar.value = happiness
 	$Money.text = "€%0.2f" % money
