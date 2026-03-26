@@ -54,10 +54,12 @@ text = "Total:"
 layout_mode = 2
 
 [node name="ElectricityAmount" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=431869788]
+unique_name_in_owner = true
 layout_mode = 2
 text = "€100"
 
 [node name="WaterAmount" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=1692720247]
+unique_name_in_owner = true
 layout_mode = 2
 text = "€100"
 
@@ -65,9 +67,10 @@ text = "€100"
 layout_mode = 2
 
 [node name="TotalAmount" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=755295378]
+unique_name_in_owner = true
 layout_mode = 2
 text = "€200"
 
 [node name="Button" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1394225458]
 layout_mode = 2
-text = "Contunue"
+text = "Continue"
