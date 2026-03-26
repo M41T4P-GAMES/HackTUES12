@@ -1,5 +1,8 @@
 extends Node
 
+var used_electricity : float = 0
+var used_water : float = 0
+
 var health: float = 100
 var money: float = 50
 var happiness: float = 50
@@ -53,11 +56,22 @@ func happier(joy: float):
 	
 func hurt(damage: float):
 	set_health(health-damage)
-		
+
 func heal(points: float):
 	set_health(health+points)
-	
-	
-	
-		
-	
+
+
+func set_used_electricity(electricity : float) -> void:
+	used_electricity = electricity
+
+
+func add_used_electricity(electricity : float) -> void:
+	used_electricity += electricity 
+
+
+func set_used_water(water : float) -> void:
+	used_water = water
+
+
+func add_used_water(water : float) -> void:
+	used_water += water 

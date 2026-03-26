@@ -18,12 +18,12 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	if mode == Mode.WORKING:
-		Global.get_bars().sadder(delta * WORKING_HAPPINESS_DECREASE_PER_SEC)
+		Global.get_stats().sadder(delta * WORKING_HAPPINESS_DECREASE_PER_SEC)
 	elif mode == Mode.RESTING:
-		Global.get_bars().happier(delta * RESTING_HAPPINESS_INCREASE_PER_SEC)
-	print("Money: " + str(Global.get_bars().money))
-	print("Health: " + str(Global.get_bars().health))
-	print("Happiness: " + str(Global.get_bars().happiness))
+		Global.get_stats().happier(delta * RESTING_HAPPINESS_INCREASE_PER_SEC)
+	print("Money: " + str(Global.get_stats().money))
+	print("Health: " + str(Global.get_stats().health))
+	print("Happiness: " + str(Global.get_stats().happiness))
 
 
 func interact() -> void:
@@ -49,4 +49,4 @@ func _on_resting_button_pressed() -> void:
 
 
 func _on_money_gain_timer_timeout() -> void:
-	Global.get_bars().make_money(WORKING_MONEY_GAIN_PER_SEC)
+	Global.get_stats().make_money(WORKING_MONEY_GAIN_PER_SEC)
