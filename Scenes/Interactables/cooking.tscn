@@ -18,6 +18,7 @@ shape = SubResource("RectangleShape2D_v5sos")
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1792601233]
 
 [node name="Control" type="Control" parent="CanvasLayer" unique_id=539852546]
+visible = false
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
