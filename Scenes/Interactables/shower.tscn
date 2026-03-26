@@ -14,5 +14,3 @@ texture = ExtResource("2_a8kii")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1535677273]
 shape = SubResource("RectangleShape2D_dm6ue")
-
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=670208826]
