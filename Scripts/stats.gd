@@ -5,6 +5,7 @@ const MAX_HAPPINESS = 100
 
 var used_electricity : float = 0
 var used_water : float = 0
+var fridge_stock: int = 0
 
 var health: float = 100
 var money: float = 50
@@ -13,7 +14,7 @@ var happiness: float = 50
 func _physics_process(_delta: float):
 	$HealthBar.value = health
 	$HappinessBar.value = happiness
-	$Money.text = "$%0.2f" % money
+	$Money.text = "€%0.2f" % money
 
 func get_health():
 	return health
@@ -36,6 +37,8 @@ func set_money(newMoney: float):
 	money = newMoney
 	if money < 0:
 		money = 0
+		return false
+	return true
 		
 func set_happiness(newHappiness: float):
 	happiness = newHappiness
@@ -46,7 +49,7 @@ func set_happiness(newHappiness: float):
 		happiness = MAX_HAPPINESS
 
 func spend_money(spending: float):
-	set_money(money - spending)
+	return set_money(money-spending)
 		
 func make_money(earn: float):
 	set_money(money + earn)
@@ -78,3 +81,14 @@ func set_used_water(water : float) -> void:
 
 func add_used_water(water : float) -> void:
 	used_water += water 
+
+
+func add_fridge_stock(stock: int):
+	fridge_stock += stock
+
+func use_fridge_stock(stock: int):
+	if fridge_stock >= stock:
+		fridge_stock -= stock
+		return true
+	else:
+		return false

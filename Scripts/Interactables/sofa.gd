@@ -24,6 +24,7 @@ func _process(delta: float) -> void:
 	print("Money: " + str(Global.get_stats().money))
 	print("Health: " + str(Global.get_stats().health))
 	print("Happiness: " + str(Global.get_stats().happiness))
+	print("Fridge Stock: " + str(Global.get_stats().fridge_stock))
 
 
 func interact() -> void:
