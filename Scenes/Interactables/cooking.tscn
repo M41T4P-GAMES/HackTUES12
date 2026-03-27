@@ -38,10 +38,12 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="EatButton" type="Button" parent="CanvasLayer/Control/VBoxContainer" unique_id=947799857]
+unique_name_in_owner = true
 layout_mode = 2
 text = "Eat"
 
 [node name="DonateButton" type="Button" parent="CanvasLayer/Control/VBoxContainer" unique_id=436355683]
+unique_name_in_owner = true
 layout_mode = 2
 text = "Donate"
 

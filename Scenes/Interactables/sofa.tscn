@@ -48,12 +48,14 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="WorkButton" type="Button" parent="CanvasLayer/ModeUI/VBoxContainer" unique_id=1099682012]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(250, 250)
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
 text = "Work"
 
 [node name="RestingButton" type="Button" parent="CanvasLayer/ModeUI/VBoxContainer" unique_id=147598469]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(250, 250)
 layout_mode = 2
 theme_override_font_sizes/font_size = 40

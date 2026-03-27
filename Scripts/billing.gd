@@ -19,7 +19,9 @@ func calculate(water_used, elec_used) -> void:
 	%ElectricityAmount.text = "€" + str(electricity_total)
 	%WaterAmount.text = "€" + str(water_total)
 	%TotalAmount.text = "€" + str(total)
+	%ContinueButton.grab_focus()
 	show()
+	
 
 
 func _on_continue_button_pressed() -> void:

@@ -74,6 +74,7 @@ text = "1"
 horizontal_alignment = 2
 
 [node name="ContinueButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1394225458]
+unique_name_in_owner = true
 layout_mode = 2
 text = "Continue"
 
