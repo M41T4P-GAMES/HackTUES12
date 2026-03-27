@@ -17,3 +17,5 @@ func _input(event: InputEvent) -> void:
 		for area in $InteractionArea.get_overlapping_areas():
 			if area.has_method("interact"):
 				area.interact()
+	
+	#printf("%d:%d", int(time_left/60), int(time_left%60));
