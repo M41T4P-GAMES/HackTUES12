@@ -22,6 +22,7 @@ func interact() -> void:
 func _on_cook_timer_timeout() -> void:
 	has_cooked = true
 	$CanvasLayer/Control.show()
+	%EatButton.grab_focus()
 
 func _on_eat_button_pressed() -> void:
 	Global.get_stats().heal(EATING_HEALTH_INCREASE)

@@ -45,6 +45,7 @@ func interact() -> void:
 	player.can_move = !player.can_move
 	if player.can_move == false:
 		$CanvasLayer/ModeUI.show()
+		%WorkButton.grab_focus()
 	else:
 		close()
 

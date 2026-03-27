@@ -9,6 +9,7 @@ func game_over(days_survived, money_spent, money_earned) -> void:
 	%DaySurvived.text = str(days_survived)
 	%MoneySpent.text = "€" + str(money_spent)
 	%MoneyEarned.text = "€" + str(money_earned)
+	%ContinueButton.grab_focus()
 	show()
 
 
