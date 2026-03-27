@@ -3,6 +3,7 @@
 [ext_resource type="Theme" uid="uid://ddrwsvcfplatw" path="res://Assets/main_theme.tres" id="1_ejdv1"]
 [ext_resource type="Script" uid="uid://bvio26wgc1o48" path="res://Scripts/game_over.gd" id="1_rr6k1"]
 [ext_resource type="Texture2D" uid="uid://da2bpj658x4l5" path="res://Assets/Textures/Buttons.png" id="3_ept84"]
+[ext_resource type="Texture2D" uid="uid://1oxfm7l1xc2e" path="res://Assets/Textures/day_end_background.png" id="3_lkr3y"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lkr3y"]
 atlas = ExtResource("3_ept84")
@@ -23,12 +24,21 @@ offset_bottom = 384.0
 theme = ExtResource("1_ejdv1")
 script = ExtResource("1_rr6k1")
 
+[node name="TextureRect" type="NinePatchRect" parent="." unique_id=117198363]
+layout_mode = 2
+texture = ExtResource("3_lkr3y")
+region_rect = Rect2(0, 0, 240, 240)
+patch_margin_left = 80
+patch_margin_top = 80
+patch_margin_right = 80
+patch_margin_bottom = 160
+
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=102263949]
 layout_mode = 2
-theme_override_constants/margin_left = 10
-theme_override_constants/margin_top = 10
-theme_override_constants/margin_right = 10
-theme_override_constants/margin_bottom = 10
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 13
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 30
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=2120819392]
 layout_mode = 2

@@ -7,8 +7,8 @@ func _ready() -> void:
 func game_over(days_survived, money_spent, money_earned) -> void:
 	get_tree().paused = true
 	%DaySurvived.text = str(days_survived)
-	%MoneySpent.text = "€" + str(money_spent)
-	%MoneyEarned.text = "€" + str(money_earned)
+	%MoneySpent.text = "€%0.2f" % money_spent
+	%MoneyEarned.text = "€%0.2f" % money_earned
 	%ContinueButton.grab_focus()
 	show()
 
